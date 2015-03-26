@@ -1,0 +1,147 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#home {
+  background: #000000;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#about {
+
+}
+
+#portfolio {
+  background-color: #222;
+  color: #ffffff;
+}
+
+#contact {
+  background-color: #222;
+  color: #ffffff;
+}
+
+#portfolio .fa {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#information {
+  background: url(../images/earth.jpg) no-repeat center center;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information .panel {
+  opacity: 0.85;
+}
+
+
+footer {
+  padding: 20px 0;
+}
+footer .fa {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer .fa:hover {
+
+}
+
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 30px; /* height of link element */
+    right: 18px; /* padding from the left side of the window */
+
+    animation: affixFadeIn 0.25s  ease-in;
+    -webkit-animation: affixFadeIn 0.25s;
+}
+
+@keyframes affixFadeIn
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes affixFadeIn
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+#top-link-block > a {
+  border-radius: 50%;
+
+  border: 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+#portfolio-modal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+#portfolio-modal .modal-content {
+  height: 100%;
+  border-radius: 0;
+}
