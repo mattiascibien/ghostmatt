@@ -11,18 +11,4 @@ $(document).ready(function() {
   $(function(){
     $('footer p > a').tooltip();
   });
-
-
-  $('#contact-form').submit(function(){
-    $.ajax({
-      dataType: 'jsonp',
-      url: "http://getsimpleform.com/messages/ajax?form_api_token=41896d297b3c68a32c1b54a837060da9",
-      data: $('#contact-form').serialize()
-    }).done(function() {
-      $('#contact-modal').modal();
-      $('#contact-form')[0].reset();
-    });
-    return false; //to stop the form from submitting
-  });
-
 });

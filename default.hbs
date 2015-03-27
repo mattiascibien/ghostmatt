@@ -52,6 +52,12 @@
     
     {{> "footer"}}
     
+    <span id="top-link-block" class="hidden">
+        <a href="#home">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </span>
+    
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
@@ -59,6 +65,6 @@
     <script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.scrollTo.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.localScroll.min.js"}}"></script>
-
+    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
 </body>
 </html>
