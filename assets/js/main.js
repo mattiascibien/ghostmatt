@@ -7,7 +7,9 @@ $(document).ready(function() {
   }
 
   $.localScroll();
-
+    
+  $('.post-content').fitVids();
+    
   $(function(){
     $('footer p > a').tooltip();
   });

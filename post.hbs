@@ -2,33 +2,58 @@
       
 {{#post}}
     <div id="main" class="container pad-section" role="main">
-        <article class="{{post_class}}">
-            <header class="page-header">
-                <h1 class="clearfix">
-                    <div class="pull-left">{{title}}</div>
-                    {{#author}}
-                        {{#if image}}
-                        <div class="pull-right">
-                            <img src="{{image}}" class="img-circle" width="42px" height="42px" />
-                        </div>
-                        {{/if}}
-                    {{/author}}
-                </h1>
-                <small>
-                    <i class="fa fa-user"></i>
-                        {{author}}
-                        |
-                        <i class="fa fa-tag"></i>
-                        {{tags}}
-                        |
-                        <i class="fa fa-calendar"></i>
-                        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </small>
-            </header>
-            
-            <section>
-                {{content}}
-            </section>
-        </article>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <article class="{{post_class}}">
+                    <header class="page-header">
+                        <h1 class="clearfix">
+                            <div class="pull-left">{{title}}</div>
+                            {{#author}}
+                                {{#if image}}
+                                <div class="pull-right">
+                                    <img src="{{image}}" class="img-circle" width="42px" height="42px" />
+                                </div>
+                                {{/if}}
+                            {{/author}}
+                        </h1>
+                        <small>
+                            <i class="fa fa-user"></i>
+                                {{author}}
+                                |
+                                <i class="fa fa-tag"></i>
+                                {{tags}}
+                                |
+                                <i class="fa fa-calendar"></i>
+                                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                        </small>
+                    </header>
+
+                    <section class="post-content">
+                        {{content}}
+                    </section>
+
+                    <footer>
+                        <hr/>
+                        {{#author}}
+                            <p>
+                            <strong>{{name}}</strong>
+                            {{#if bio}}
+                                | {{bio}}</p>
+                            {{else}}
+                                | Read <a href="{{url}}">more posts</a> by this author.
+                            {{/if}}
+                            {{#if location}}
+                                | {{location}}
+                            {{/if}}
+                            {{#if website}}
+                                | <a href="{{website}}">{{website}}</a>
+                            {{/if}}
+                            </p>
+                        {{/author}}
+                        <hr/>
+                    </footer>
+                </article>
+            </div>
+        </div>
     </div>
 {{/post}}
