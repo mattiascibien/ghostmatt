@@ -1,0 +1,18 @@
+<nav role="navigation" class="nav-pills">
+    <ul class="pager pagination-lg">
+        {{#if prev}}
+        <li>
+            <a href="{{page_url prev}}" aria-label="Previous">
+                <span aria-hidden="true">&laquo; Newer Posts</span>
+            </a>
+        </li>
+        {{/if}}
+        {{#if next}}
+        <li>
+            <a href="{{page_url next}}" aria-label="Next">
+                <span aria-hidden="true">Older Posts &raquo;</span>
+            </a>
+        </li>
+        {{/if}}
+    </ul>
+</nav>
