@@ -27,30 +27,21 @@
                                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
                         </small>
                     </header>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Responsive Main Website -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9164254472564319"
+                         data-ad-slot="8469515387"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
 
                     <section class="post-content">
                         {{content}}
                     </section>
-                    
-                    {{! I do not need this in my blog <footer>
-                        <hr/>
-                        {{#author}}
-                            <p>
-                            <strong>{{name}}</strong>
-                            {{#if bio}}
-                                | {{bio}}</p>
-                            {{else}}
-                                | Read <a href="{{url}}">more posts</a> by this author.
-                            {{/if}}
-                            {{#if location}}
-                                | {{location}}
-                            {{/if}}
-                            {{#if website}}
-                                | <a href="{{website}}">{{website}}</a>
-                            {{/if}}
-                            </p>
-                        {{/author}}
-                    </footer> }}
                     
                     {{! Comment this with to remove disqus comments }}
                     {{> "comments"}}
