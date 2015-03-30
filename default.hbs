@@ -40,8 +40,15 @@
             {{> "navbarbrand"}}
         </div>
 
-          <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
             {{navigation}}
+            <form class="navbar-form navbar-right" id="search-form" role="search">
+                <div class="form-group" >
+                    <input type="text" id="search" class="form-control" placeholder="Search" data-toggle="popover"
+                           title="Search Results" data-placement="bottom" data-trigger="focus" autocomplete="off"
+                           data-content="<div id='results'><ul></ul></div>">
+                </div>
+            </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -64,6 +71,7 @@
 
     <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.scrollTo.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.localScroll.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvid.js"}}"></script>

@@ -150,3 +150,8 @@ footer .fa:hover {
 *:focus {
     outline: 0 !important;
 }
+
+
+.popover {
+  width:100%;
+}

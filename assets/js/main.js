@@ -12,5 +12,13 @@ $(document).ready(function() {
     
   $(function(){
     $('footer p > a').tooltip();
+    $('#search').popover({ 
+        html : true
+    });
+    $("#search").ghostHunter({
+        results   : "#results",
+        onKeyUp   : true,
+        result_template : "<li><a href='{{link}}'><strong>{{title}}</strong></p></li>"
+    });
   });
 });
