@@ -31,7 +31,7 @@
                     <section class="post-content">
                         {{content}}
                     </section>
-
+                    
                     <footer>
                         <hr/>
                         {{#author}}
@@ -50,8 +50,10 @@
                             {{/if}}
                             </p>
                         {{/author}}
-                        <hr/>
                     </footer>
+                    
+                    {{! Comment this with to remove disqus comments }}
+                    {{> "comments"}}
                 </article>
             </div>
         </div>
