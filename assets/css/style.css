@@ -217,3 +217,58 @@ footer .fa:hover {
     background: #0b6087;
     color: #fff
 }
+
+
+.btn-paypal {
+    background: #009cde;
+    border-radius: 0;
+    color: #fff
+}
+.btn-paypal:link, .btn-paypal:visited {
+    color: #fff
+}
+.btn-paypal:active, .btn-paypal:hover {
+    background: #0c8dc4;
+    color: #fff
+}
+
+
+.btn-bitcoin {
+    background: #ee9209;
+    border-radius: 0;
+    color: #fff
+}
+.btn-bitcoin:link, .btn-bitcoin:visited {
+    color: #fff
+}
+.btn-bitcoin:active, .btn-bitcoin:hover {
+    background: #e28700;
+    color: #fff
+}
+
+
+.btn-dogecoin {
+    background: #BA9F33;
+    border-radius: 0;
+    color: #fff
+}
+.btn-dogecoin:link, .btn-dogecoin:visited {
+    color: #fff
+}
+.btn-dogecoin:active, .btn-dogecoin:hover {
+    background: #BA9040;
+    color: #fff
+}
+
+.btn-litecoin {
+    background: #808080;
+    border-radius: 0;
+    color: #fff
+}
+.btn-litecoin:link, .btn-litecoin:visited {
+    color: #fff
+}
+.btn-litecoin:active, .btn-litecoin:hover {
+    background: #636363;
+    color: #fff
+}
