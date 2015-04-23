@@ -1,4 +1,21 @@
-<a href="http://twitter.com/share?text={{encode title}}&url={{url absolute='true'}}" title="Share on Twitter" target="_blank" class="btn btn-paypal" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-paypal"></i> Paypal</a>
-<a href="http://twitter.com/share?text={{encode title}}&url={{url absolute='true'}}" title="Share on Twitter" target="_blank" class="btn btn-bitcoin" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><img src="{{asset "images/icon_bitcoin.png"}}" /> Bitcoin</a>
-<a href="http://twitter.com/share?text={{encode title}}&url={{url absolute='true'}}" title="Share on Twitter" target="_blank" class="btn btn-litecoin" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><img src="{{asset "images/icon_litecoin.png"}}" /> Litecoin</a>
-<a href="http://twitter.com/share?text={{encode title}}&url={{url absolute='true'}}" title="Share on Twitter" target="_blank" class="btn btn-dogecoin" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><img src="{{asset "images/icon_dogecoin.png"}}" /> Dogecoin</a>
+<a href="#" rel="popover" class="btn btn-paypal"><i class="fa fa-paypal"></i> Paypal</a>
+<a href="#" data-toggle="popover" rel="popover"
+        class="btn btn-bitcoin coin" 
+        data-coin="Bitcoin" 
+        data-address="12345678"
+        data-icon="{{asset "images/icon_bitcoin.png"}}">
+    <img src="{{asset "images/icon_bitcoin.png"}}" /> Bitcoin
+</a>
+<a href="#" rel="popover"
+        class="btn btn-litecoin coin" 
+        data-coin="Litecoin" 
+        data-address="12345678"
+        data-icon="{{asset "images/icon_litecoin.png"}}">
+    <img src="{{asset "images/icon_litecoin.png"}}" /> Litecoin
+</a>
+<a href="#" rel="popover"
+        class="btn btn-dogecoin coin"
+        data-coin="Dogecoin" 
+        data-address="12345678"
+        data-icon="{{asset "images/icon_dogecoin.png"}}"><img src="{{asset "images/icon_dogecoin.png"}}" /> Dogecoin
+</a>

@@ -21,4 +21,7 @@ $(document).ready(function() {
         result_template : "<li><a href='{{link}}'><strong>{{title}}</strong></p></li>"
     });
   });
+  
+  coinwidget($('.coin'));
+  $('.coin a').tooltip();
 });
