@@ -5,6 +5,8 @@ function coinwidget(buttons) {
         var address = button.data('address');
         var icon = button.data('icon');
         
+        button.html('<img src="' + icon + '"/> ' + coin);
+        
         var help = "Click on the right button to send. If your wallet does not support the protocol copy the address the text box.<br/>Thanks for donating!";
 
         button.popover({
