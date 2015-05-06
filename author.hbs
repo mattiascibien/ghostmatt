@@ -1,0 +1,21 @@
+{{!< default}}
+     
+{{#author}}
+<!-- first section - Home -->
+<header id="home" class="home">
+  <div class="text-vcenter">
+    <h1>{{name}}</h1>
+    <h3>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</h3>
+  </div>
+</header>
+<!-- /first section -->
+{{/author}}
+
+<div id="main" class="container" role="main">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            {{! The tag below includes the post loop - partials/loop.hbs }}
+            {{> "loop"}}
+        </div>
+    </div>
+</div>
